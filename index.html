@@ -13,31 +13,23 @@
 
         body {
             background: #0a0c10;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             color: #e8edf2;
             line-height: 1.5;
             padding: 2rem 1.5rem;
         }
 
-        /* сдержанная темная палитра */
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* карточки и фон */
+        /* карточки */
         .card {
             background: #111317;
             border: 1px solid #23262e;
             border-radius: 1.75rem;
             padding: 2rem;
-            transition: border-color 0.2s ease;
-        }
-
-        .glass-panel {
-            background: rgba(17, 19, 23, 0.85);
-            backdrop-filter: blur(2px);
-            border: 1px solid #262a33;
         }
 
         /* сетка */
@@ -51,7 +43,6 @@
         .about-section h2 {
             font-size: 1.6rem;
             font-weight: 500;
-            letter-spacing: -0.3px;
             margin-bottom: 1.25rem;
             display: flex;
             align-items: center;
@@ -88,7 +79,6 @@
             border-radius: 40px;
             font-size: 0.75rem;
             font-weight: 500;
-            letter-spacing: 0.2px;
             color: #b9c3d4;
         }
 
@@ -117,11 +107,10 @@
             color: #9aa3b5;
         }
 
-        /* проекты — блок с кнопками */
+        /* проекты — кнопки */
         .projects-section h2 {
             font-size: 1.6rem;
             font-weight: 500;
-            letter-spacing: -0.3px;
             margin-bottom: 1.25rem;
             display: flex;
             align-items: center;
@@ -172,7 +161,6 @@
             font-weight: 600;
             color: #f0f3fa;
             font-size: 1rem;
-            letter-spacing: -0.2px;
         }
 
         .btn-repo {
@@ -185,7 +173,6 @@
         .arrow {
             color: #5f6c84;
             font-size: 1.2rem;
-            transition: transform 0.2s;
         }
 
         .project-btn:hover .arrow {
@@ -240,13 +227,12 @@
 </head>
 <body>
 <div class="container">
-    <!-- главная сетка: слева информация обо мне, справа проекты -->
     <div class="grid-2">
-        <!-- ЛЕВАЯ КОЛОНКА: О себе, обучение, опыт -->
+        <!-- ЛЕВАЯ КОЛОНКА: информация обо мне -->
         <div class="card about-section">
             <h2>✦ Максим</h2>
             <div class="about-text">
-                <p>Разработчик, который превращает сложные процессы в понятные цифровые инструменты. Специализируюсь на <span class="highlight">автоматизации документооборота</span>, создании Telegram-ботов и веб-приложений. Люблю чистый код, структурные решения и находить неочевидные способы упростить рутину.</p>
+                <p>Разработчик, который превращает сложные процессы в понятные цифровые инструменты. Специализируюсь на <span class="highlight">автоматизации документооборота</span>, создании Telegram-ботов и веб-приложений.</p>
                 <p>Начинал как самоучка, затем погрузился в промышленную разработку. Участвовал в проектах по оптимизации бизнес-процессов, где удалось сократить время обработки данных на <span class="highlight">35%</span> за счёт скриптов автозаполнения.</p>
             </div>
             
@@ -258,51 +244,41 @@
                 <span class="badge">📁 Git / GitHub</span>
             </div>
 
-            <!-- обучение + опыт (сдержанный таймлайн) -->
+            <!-- Обучение и опыт -->
             <div style="margin-top: 1.5rem;">
                 <div class="timeline-item">
                     <div class="timeline-year">2023 — н.в.</div>
                     <div class="timeline-title">Разработчик / Интегратор</div>
-                    <div class="timeline-desc">Создание решений для автозаполнения документов (avto-zapolnenie-docov2), разработка служебных Telegram-ботов (TB) и поддержка внутренних инструментов автоматизации.</div>
+                    <div class="timeline-desc">Создание решений для автозаполнения документов, разработка Telegram-ботов и поддержка инструментов автоматизации.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2021 — 2023</div>
                     <div class="timeline-title">Практика в IT-интеграции</div>
-                    <div class="timeline-desc">Участие в проекте Praktika_COD_IS1: анализ требований, написание скриптов для обработки данных, взаимодействие с заказчиками.</div>
+                    <div class="timeline-desc">Участие в проектах: анализ требований, написание скриптов для обработки данных, взаимодействие с заказчиками.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2020 — 2024</div>
                     <div class="timeline-title">Колледж информатики и программирования</div>
-                    <div class="timeline-desc">Специальность «Информационные системы и программирование». Диплом с отличием, углубленное изучение Python, баз данных и веб-технологий.</div>
+                    <div class="timeline-desc">Специальность «Информационные системы и программирование». Углубленное изучение Python, баз данных и веб-технологий.</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2024 — 2025</div>
-                    <div class="timeline-title">Доп. образование / Стажировка</div>
-                    <div class="timeline-desc">Курсы по архитектуре ПО, практика в области CI/CD, доработка opensource-проектов (менеджер паролей passwoord).</div>
-                </div>
-            </div>
-            <div style="font-size: 0.85rem; color: #7f8ea3; margin-top: 1rem; border-left: 2px solid #262a33; padding-left: 1rem;">
-                🔹 Основной фокус: надёжный код, который решает реальные задачи.
             </div>
         </div>
 
-        <!-- ПРАВАЯ КОЛОНКА: проекты (кнопки, которые ведут на рабочие репозитории) -->
+        <!-- ПРАВАЯ КОЛОНКА: проекты (кнопки) -->
         <div class="card projects-section">
-            <h2>▸ Активные проекты</h2>
+            <h2>▸ Проекты</h2>
             <div class="button-group">
-                <!-- TB (Telegram бот) - работает публично -->
                 <a href="https://github.com/Maksik203/TB" target="_blank" rel="noopener noreferrer" class="project-btn">
                     <div class="btn-left">
                         <div class="btn-icon">🤖</div>
                         <div class="btn-info">
-                            <div class="btn-title">TB · Telegram Bot Framework</div>
+                            <div class="btn-title">TB · Telegram Bot</div>
                             <div class="btn-repo">Maksik203/TB</div>
                         </div>
                     </div>
                     <div class="arrow">→</div>
                 </a>
 
-                <!-- avto-zapolnenie-docov2 (публичный? если нет — кнопка ведёт на профиль, но я оставляю ссылку как вы дали — она может быть приватной. если 404 — замените на публичный статус. но по вашему запросу оставляю ссылкой на репозиторий. -->
                 <a href="https://github.com/Maksik203/avto-zapolnenie-docov2" target="_blank" rel="noopener noreferrer" class="project-btn">
                     <div class="btn-left">
                         <div class="btn-icon">📄</div>
@@ -314,54 +290,40 @@
                     <div class="arrow">→</div>
                 </a>
 
-                <!-- passwoord (менеджер паролей) -->
                 <a href="https://github.com/Maksik203/passwoord" target="_blank" rel="noopener noreferrer" class="project-btn">
                     <div class="btn-left">
                         <div class="btn-icon">🔐</div>
                         <div class="btn-info">
-                            <div class="btn-title">Passwoord · Менеджер паролей</div>
-                            <div class="btn-repo">Maksik203/passwoord</div>
+                            <div class="btn-title">Passwoord</div>
+                            <div class="btn-repo">Менеджер паролей</div>
                         </div>
                     </div>
                     <div class="arrow">→</div>
                 </a>
 
-                <!-- site-soc-ceti77 -->
                 <a href="https://github.com/Maksik203/site-soc-ceti77" target="_blank" rel="noopener noreferrer" class="project-btn">
                     <div class="btn-left">
                         <div class="btn-icon">🌐</div>
                         <div class="btn-info">
                             <div class="btn-title">site-soc-ceti77</div>
-                            <div class="btn-repo">Веб-проект / лендинг-платформа</div>
+                            <div class="btn-repo">Веб-проект</div>
                         </div>
                     </div>
                     <div class="arrow">→</div>
                 </a>
             </div>
 
-            <!-- доп. ссылка на профиль GitHub (если какие-то репозитории приватные, пользователь всегда перейдет в общий список) -->
             <div style="margin-top: 1.5rem;">
                 <a href="https://github.com/Maksik203" target="_blank" rel="noopener noreferrer" class="profile-link">
                     <span>🐙</span> Все репозитории на GitHub
-                    <span style="font-size: 1rem;">↗</span>
+                    <span>↗</span>
                 </a>
             </div>
-            <p style="font-size: 0.7rem; color: #4a5568; margin-top: 1rem; border-top: 1px solid #1e2128; padding-top: 1rem;">
-                * Репозитории могут быть приватными — чтобы ссылки открывались без 404, сделайте их публичными в настройках GitHub.<br>
-                ✅ <strong>TB</strong> уже публичный и доступен. Для остальных — измените видимость на Public.
-            </p>
-        </div>
-    </div>
-
-    <!-- краткий итог / философия (сдержанно) -->
-    <div style="margin-top: 2rem; display: flex; justify-content: center;">
-        <div style="background: #0f1117; border-radius: 2rem; padding: 0.7rem 1.5rem; border: 1px solid #22262f; font-size: 0.8rem; color: #9aa5bb;">
-            ⚡ Автоматизация · Чистый код · Результат
         </div>
     </div>
 
     <div class="footer-note">
-        Максим — портфолио разработчика • 2026 • темная сдержанная версия
+        Максим — портфолио разработчика • 2026
     </div>
 </div>
 </body>
